@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>My Web Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-bar" id="menu-bar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            
+           <span><i class="fas fa-code"></i>My-Page</span>
+        </div>
+        <nav class="navbar"> 
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#certificate">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav> 
+            
+
+    </header>
+
+    <section class="home" id="home">
+       
+        <div class="home-text">
+            <h1>Hi, I am <span class="bold">Tharindu <br>Weerasinghe</span></h1>
+            <p class="text1">Full Stack Developer</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        
+        <h1 class="heading">About Me</h1>
+        <p> I am a passionate and driven undergraduate student with a focus on applied information technology.Currently studying in my second year at the Sri LankaInstitute of Technology. Studied both front-end and back-end web development. Looking for opportunities to apply full-stack development skills and contribute meaningfully to real-world projects.</p>
+
+        <div class="tab">
+            <div class="tab-btn">
+                <button class="btn active" onclick="showTabContent('skills',this)">Skills</button>
+                <button class="btn" onclick="showTabContent('education',this)">Education</button>
+            </div>
+            <div class="tab-content">
+                <div class="content active" id="skills">
+                    
+                 <ul>
+                    <li><h3 >Frontend</h3>HTML, CSS, JavaScript, Angular</li>
+                    <li><h3 >Backend</h3> Node.js, Express.js</li>
+                    <li><h3 >Database</h3> MySQL, MongoDB</li>
+                    <li><h3 >Version Control</h3> Git, GitHub</li>
+                    <li><h3 >Tools</h3> VS Code, Postman</li>
+                </ul>
+                </div>
+                <div class="content" id="education" style="display: none;">
+                     <div class="education-item">
+                        <h3>SLTC Research University</h3>
+                        <p>BSc (Hons) in Applied Information Technology – Undergraduate</p>
+                        <p>Location: Sri Lanka</p>
+                    </div>
+
+                    <div class="education-item">
+                         <h3>IT Guru Global</h3>
+                         <p>Completed Web Development Course</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>University of Moratuwa – Open Learning Platform</h3>
+                        <p>Completed the following certified courses:</p>
+                        <ul>
+                            <li>Python for Beginners</li>
+                            <li>Web Design for Beginners</li>
+                            <li>Advanced Python Programming</li>
+                            <li>Front-End Web Development</li>
+                            <li>Server-Side Web Development</li>
+                        </ul>
+                    </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="heading">My Services</h1>
+
+        <div class="service-container">
+            <div class="service-box">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Custom Website Development</h3>
+                <p>Build responsive, fast-loading websites using HTML, CSS, JavaScript.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-code"></i>
+                <h3>Front-End Development</h3>
+                <p>Design and implement user interfaces with modern frameworks like Angular.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-server"></i>
+                <h3>Back-End Development</h3>
+                <p>Develop server-side applications using Node.js and Express.js.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Manage data with MySQL and MongoDB for efficient storage and retrieval.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificate" id="certificate">
+        <h1 class="heading">My Certificates</h1>
+        <div class="certificate-container">
+            <div class="certificate-box" onclick="viewCertificate('certificate/Python_for_Beginners_E-Certificate.pdf')">
+                <img src="images/Python for beginners.PNG"  alt="Certificate 1">
+                <p>Python for Beginners - University of Moratuwa</p>
+            </div>
+            <div class="certificate-box" onclick="viewCertificate('certificate/Python_Programming_E-Certificate.pdf')">
+                <img src="images/python programming.PNG"  alt="Certificate 2">
+                <p>Python Programming - University of Moratuwa</p>
+            </div>
+            <div class="certificate-box"  onclick="viewCertificate('certificate/Web_Design_for_Beginners_E-Certificate.pdf')" >
+                <img src="images/Web desing.PNG"alt="Certificate 3">
+                <p>Web Design for Beginners - University of Moratuwa</p>
+            </div>
+            <div class="certificate-box" onclick="viewCertificate('certificate/Front-End_Web_Development_E-Certificate.pdf')">
+                <img src="images/front end.PNG"  alt="Certificate 4">
+                <p>Front-End Web Development - University of Moratuwa</p>
+            </div>
+            <div class="certificate-box"  onclick="viewCertificate('certificate/Server-side_Web_Programming_E-Certificate.pdf')" >
+                <img src="images/server-side.PNG"alt="Certificate 5">
+                <p>Server-Side Web Development - University of Moratuwa</p>
+            </div>
+             <div class="certificate-box"  onclick="viewCertificate('certificate/Web Development ITGG.pdf')" >
+                <img src="images/ITGG Web Development.PNG"alt="Certificate 5">
+                <p> Web Development & Freelance - IT Guru Global</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-text">
+                <i class="fa fa-envelope" aria-hidden="true"></i> <p> tharindur817@gmail.com</p><br>
+                <i class="fa fa-phone"></i><p> 0714848937</p>
+
+            <div class="socials">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+
+            </div>
+            <button onclick="downloadResume()" class="btn-download"><i class="fa fa-download"></i>  Download CV</button>
+                
+            </div>
+            <div class="contact-form">
+                <form action="" method="">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <textarea name="message" placeholder="Enter Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+            
+                
+        
+<script src="script.js"></script>
+</body>
